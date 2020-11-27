@@ -5,7 +5,7 @@ Robot for parsing [re:Invent](https://reinvent.awsevents.com/) sessions.
 ## To run
 
 1. Install rcc. See instructions at https://github.com/robocorp/rcc
-2. rcc pull https://github.com/mikahanninen/robot-awsreinvent-sessions
+2. rcc pull github.com/mikahanninen/robot-awsreinvent-sessions
 3. rcc run
 
 ## Configuration

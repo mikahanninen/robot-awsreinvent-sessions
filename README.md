@@ -1,6 +1,6 @@
-# Web scraping AWS re:Invent Sessions
+# Web scraping AWS re:Invent sessions
 
-Robot for parsing [re:Invent](https://reinvent.awsevents.com/) sessions.
+Robot for parsing AWS [re:Invent](https://reinvent.awsevents.com/) sessions.
 
 ## To run
 

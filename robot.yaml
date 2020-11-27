@@ -1,0 +1,18 @@
+tasks:
+  get-aws-session-list:
+    command:
+      - robot
+      - --report
+      - NONE
+      - --outputdir
+      - output
+      - task.robot
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+    - .gitignore

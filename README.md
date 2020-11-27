@@ -12,39 +12,39 @@ Robot for parsing AWS [re:Invent](https://reinvent.awsevents.com/) sessions.
 
 Configure following environment variables:
 
-#### AWS_SESSION_TAG
+#### AWS_SESSION_TAG (optional)
 
 List only sessions with this tag
 ```
 AWS_SESSION_TAG=databases
 ```
 
-#### AWS_SESSION_DATE
+#### AWS_SESSION_DATE (optional)
 
 List sessions only on this date
 ```
 AWS_SESSION_DATE="Dec 17, 2020"
 ```
 
-#### AWS_SESSION_STATS
+#### AWS_SESSION_STATS (optional)
 
 Set to any value if you want to see session tag statistics in the console output
 ```
 AWS_SESSION_STATS=1
 ```
 
-#### AWS_SESSION_DESC
+#### AWS_SESSION_DESC (optional)
 
 Set to any value if you want to see session description in the console output
 ```
 AWS_SESSION_DESC=1
 ```
 
-### Language Filter
+### Language Filter (optional)
 
 By default only English language sessions are shown. Modify the `task.robot` variable `@{LANGUAGE_FILTER}` to change what languages are shown.
 
-### Robocloud Vault
+### Robocloud Vault (REQUIRED)
 
 Required secrets have been stored into `Robocorp Vault` with key `aws-reinvent` which
 needs to hold variables `email` and `password` for the user accessing AWS re:Invent website.

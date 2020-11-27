@@ -46,8 +46,8 @@ By default only English language sessions are shown. Modify the `task.robot` var
 
 ### Robocloud Vault (REQUIRED)
 
-Required secrets have been stored into `Robocorp Vault` with key `aws-reinvent` which
-needs to hold variables `email` and `password` for the user accessing AWS re:Invent website.
+Required secrets need to be stored into `Robocorp Vault` with key `aws-reinvent` which
+should hold variables `email` and `password` for the user accessing AWS re:Invent website.
 
 For instructions to set the `Robocorp Vault` see https://robocorp.com/docs/development-howtos/variables-and-secrets/vault.
 

@@ -8,6 +8,8 @@ Robot for parsing AWS [re:Invent](https://reinvent.awsevents.com/) sessions.
 2. rcc pull github.com/mikahanninen/robot-awsreinvent-sessions
 3. rcc run
 
+Result is saved into `sessions.csv` file.
+
 ## Configuration
 
 Configure following environment variables:

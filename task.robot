@@ -61,5 +61,5 @@ Get AWS session list
         Log To Console    ${row}[schedule] - ${row}[name]
         Run Keyword If    ${AWS_DESC}    Log To Console    ${details}
     END
-    Log To Console    ${SEPARATOR}\nTag Statistics\n${SEPARATOR}
+    Run Keyword If    Log To Console    ${SEPARATOR}\nTag Statistics\n${SEPARATOR}
     Run Keyword If    ${SESSION_STATS}    Print Tag Statistics    ${tagcloud}

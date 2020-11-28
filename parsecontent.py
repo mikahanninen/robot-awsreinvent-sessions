@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from collections import Counter
 from robot.api import logger
 from robot.libraries.BuiltIn import BuiltIn
+from RPA.Tables import Tables
 
 
 def parse_file_content(infile):
@@ -70,6 +71,12 @@ def filter_data_by_command_line_argument(
             date_match = False
         if tag_match and date_match:
             rows.append(row)
+    table = Tables().create_table(
+        rows, columns=["name", "schedule", "description", "tags"]
+    )
+    Tables().write_table_to_csv(
+        table, "sessions.csv", header=["name", "schedule", "description", "tags"]
+    )
     counter = Counter(tag_cloud)
     return rows, counter
 
